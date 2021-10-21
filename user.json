@@ -1,0 +1,36 @@
+[
+    {
+        "user" : "fredrik", 
+        "password" : "test" 
+    },
+
+    {
+        "user" : "simon", 
+        "password" : "simo" 
+    },
+
+    {
+        "user" : "christian", 
+        "password" : "chri" 
+    },
+
+    {
+        "user" : "iliass", 
+        "password" : "ilia" 
+    },
+
+    {
+        "user" : "louice", 
+        "password" : "loui" 
+    },
+
+    {
+        "user" : "isac", 
+        "password" : "isac" 
+    },
+
+    {
+        "user" : "johannes", 
+        "password" : "joha" 
+    }
+]

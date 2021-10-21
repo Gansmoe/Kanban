@@ -1,0 +1,171 @@
+$fontFamily: sans-serif;
+$borderRadius: 10px;
+$bgColorContainer: antiquewhite;
+$bgColorButtonHover: lightcyan;
+$bgColorButton: lightblue;
+
+* {
+  font-family: $fontFamily;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  .logOutButton {
+    width: 10%;
+    height: 30px;
+    margin-left: auto;
+  }
+  .kanbanContainer {
+    display: flex;
+    background-color: $bgColorContainer;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: $fontFamily;
+    border-radius: 10px;
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      width: 100px;
+      background-color: lightblue;
+      padding: 10px;
+      margin: 0 10px;
+      border-radius: 10px;
+      height: 100%;
+      transition: background 0.3s ease-in-out;
+      h3 {
+        margin-bottom: 20px;
+        color: white;
+        user-select: none;
+      }
+      .kanban-item {
+        padding: 10px 15px;
+        box-sizing: border-box;
+        background-color: red;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .addButton {
+        display: flex;
+        padding: 5px;
+        background-color: $bgColorButton;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        &:hover {
+          background-color: $bgColorButtonHover;
+        }
+        .fas {
+          margin-right: 5px;
+        }
+      }
+      .hide {
+        display: none;
+      }
+
+      p,
+      textarea {
+        resize: none;
+        min-width: 80%;
+        background-color: $bgColorContainer;
+        word-wrap: break-word;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .saveButton {
+        width: 30%;
+        background-color: lightcyan;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px 5px 20px 5px;
+      }
+      .textDiv {
+        .label {
+          background-color: $bgColorContainer;
+          word-wrap: break-word;
+          border: none;
+          padding: 10px;
+          border-radius: 10px;
+        }
+        textarea {
+          min-width: 80%;
+          background-color: $bgColorContainer;
+          word-wrap: break-word;
+          border: none;
+          padding: 10px;
+          border-radius: 10px;
+          resize: none;
+        }
+        button {
+          width: 30%;
+          background-color: lightcyan;
+          border: none;
+          border-radius: 10px;
+          padding: 5px;
+          margin: 5px 5px 20px 5px;
+
+          &:hover {
+            cursor: pointer;
+            background-color: rgb(136, 192, 192);
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .hover {
+    background-color: rgb(96, 131, 160) !important;
+  }
+}
+
+#body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    text-align: center;
+  }
+  #div {
+    background-color: $bgColorContainer;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $borderRadius;
+    width: 60%;
+    #user {
+      height: 50px;
+      border: none;
+      border-radius: $borderRadius;
+      margin: 0 10px 0 10px;
+    }
+    #psw {
+      height: 50px;
+      border: none;
+      border-radius: $borderRadius;
+      margin: 0 10px 0 10px;
+    }
+    button {
+      margin: 10px;
+      height: 50px;
+      padding: 0 20px 0 20px;
+      background-color: $bgColorButton;
+      border: none;
+      border-radius: $borderRadius;
+      font-family: $fontFamily;
+      &:hover {
+        background-color: $bgColorButtonHover;
+      }
+    }
+  }
+}
